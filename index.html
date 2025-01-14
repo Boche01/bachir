@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>موقع الكاتب</title>
+    <style>
+        body {
+            font-family: 'Amiri', serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #4a90e2;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+        }
+
+        nav a:hover {
+            background-color: #4a90e2;
+        }
+
+        section {
+            padding: 20px;
+            margin: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .books img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>مرحباً بكم في موقع الكاتب</h1>
+    </header>
+
+    <nav>
+        <a href="#about">عن الكاتب</a>
+        <a href="#books">الكتب</a>
+        <a href="#blog">المدونة</a>
+        <a href="#contact">اتصل بنا</a>
+    </nav>
+
+    <main>
+        <section id="about">
+            <h2>عن الكاتب</h2>
+            <p>مرحباً، أنا [اسم الكاتب]. أعمل ككاتب ومؤلف وأحب مشاركة الأفكار والقصص مع العالم. لقد نشرت عدة كتب وحصلت على جوائز مختلفة تقديراً لعملي.</p>
+        </section>
+
+        <section id="books" class="books">
+            <h2>الكتب</h2>
+            <p>اكتشفوا أحدث كتبي:</p>
+            <img src="book-cover.jpg" alt="غلاف الكتاب">
+            <p><strong>عنوان الكتاب:</strong> [عنوان الكتاب هنا]</p>
+            <p><strong>الوصف:</strong> نبذة عن الكتاب...</p>
+        </section>
+
+        <section id="blog">
+            <h2>المدونة</h2>
+            <p>تابعوا أحدث المقالات والأفكار:</p>
+            <ul>
+                <li><a href="#">عنوان المقال الأول</a></li>
+                <li><a href="#">عنوان المقال الثاني</a></li>
+                <li><a href="#">عنوان المقال الثالث</a></li>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>اتصل بنا</h2>
+            <form action="#" method="post">
+                <label for="name">الاسم:</label><br>
+                <input type="text" id="name" name="name" required><br><br>
+                <label for="email">البريد الإلكتروني:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+                <label for="message">الرسالة:</label><br>
+                <textarea id="message" name="message" rows="5" required></textarea><br><br>
+                <button type="submit">إرسال</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 موقع الكاتب. جميع الحقوق محفوظة.</p>
+    </footer>
+</body>
+
+</html>
